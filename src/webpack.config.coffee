@@ -1,20 +1,19 @@
 
-import slsw				from 'serverless-webpack'
-import nodeExternals 	from 'webpack-node-externals'
+import slsw from 'serverless-webpack'
 
 module.exports = {
 	entry: slsw.lib.entries
 	target: 'node'
+	packager: 'yarn'
 	mode: 'production'
 	node: {
 		__dirname: false
 		__filename: false
 	}
-	externals: [nodeExternals()]
-	stats: 'minimal'
-	optimization: {
-		minimize: false
+	externals: {
+		'aws-sdk': 'aws-sdk'
 	}
+	stats: 'minimal'
 	performance: {
     	# Turn off size warnings for entry points
 		hints: false
