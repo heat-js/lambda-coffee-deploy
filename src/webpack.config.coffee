@@ -27,6 +27,6 @@ module.exports = {
 		]
 	}
 	resolve: {
-		extensions: [ '.js', '.jsx', '.coffee' ]
+		extensions: [ '.js', '.jsx', '.coffee', '.json' ]
 	}
 }
