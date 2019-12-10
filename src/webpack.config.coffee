@@ -1,6 +1,5 @@
 
-import slsw				from 'serverless-webpack'
-import nodeExternals 	from 'webpack-node-externals'
+import slsw from 'serverless-webpack'
 
 module.exports = {
 	entry: slsw.lib.entries
@@ -10,11 +9,10 @@ module.exports = {
 		__dirname: false
 		__filename: false
 	}
-	externals: [nodeExternals()]
-	stats: 'minimal'
-	optimization: {
-		minimize: false
+	externals: {
+		'aws-sdk': 'aws-sdk'
 	}
+	stats: 'minimal'
 	performance: {
     	# Turn off size warnings for entry points
 		hints: false
@@ -28,6 +26,6 @@ module.exports = {
 		]
 	}
 	resolve: {
-		extensions: [ '.js', '.jsx', '.coffee' ]
+		extensions: [ '.js', '.jsx', '.coffee', '.json' ]
 	}
 }
