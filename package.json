@@ -1,6 +1,6 @@
 {
 	"name": "@heat/lambda-coffee-deploy",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"license": "MIT",
 	"private": false,
 	"repository": {
@@ -22,7 +22,7 @@
 	},
 	"dependencies": {
 		"coffee-loader": "^1.0.0",
-		"coffeescript": "^2.4.1",
+		"coffeescript": "^2.5.1",
 		"serverless": "^1.82.0",
 		"serverless-webpack": "^5.3.4",
 		"webpack": "^4.44.1",
