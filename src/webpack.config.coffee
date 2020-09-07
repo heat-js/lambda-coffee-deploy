@@ -1,8 +1,8 @@
 
-import slsw from 'serverless-webpack'
+# import slsw from 'serverless-webpack'
 
 module.exports = {
-	entry: slsw.lib.entries
+	# entry: slsw.lib.entries
 	target: 'node'
 	mode: 'production'
 	node: {
